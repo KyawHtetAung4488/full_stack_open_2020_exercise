@@ -29,7 +29,7 @@ const Statistics = ({good,neutral,bad}) => {
               <Statistic text="neutral" value={neutral} />
               <Statistic text="bad" value={bad} />
               <Statistic text="all" value={good+bad+neutral} />
-              <Statistic text="average" value={ all ? (good-bad) / all : ': no feedback ginve' } />
+              <Statistic text="average" value={ all ? (good-bad) / all : ': no feedback given' } />
               <Statistic text="positive" value={ all ? (good/all) * 100 + '%' : ': no feeback given' } />
             </tbody>
           </table>
